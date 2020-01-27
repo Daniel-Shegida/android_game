@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/test3"
+            android:layout_weight="1"
+            android:contentDescription="@string/startImage" />
+        <Button
+            android:id="@+id/starter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/test2"
+            android:layout_weight="6"
+            android:text="@string/startGameBtn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/blackScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorMain"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
